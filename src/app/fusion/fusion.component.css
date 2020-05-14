@@ -1,0 +1,20 @@
+.centered{
+  text-align: center;
+}
+.row{
+  width:100%;
+  flex-direction: row;
+  justify-content:center;
+}
+.Force{
+  background: red;
+}
+.Spirit{
+  background: green;
+}
+.Void{
+  background: purple;
+}
+.Magic{
+  background: blue;
+}

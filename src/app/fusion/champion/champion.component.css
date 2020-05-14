@@ -1,0 +1,45 @@
+.ascension{
+  display:flex;
+  justify-content: center;
+}
+.rankCompleted{
+  cursor:pointer;
+  color:#e344c8;
+}
+.rankUncompleted{
+  cursor:pointer;
+  color:yellow;
+}
+
+.Legendary{
+  border-style: solid;
+  border-color: gold;
+}
+.Epic{
+  border-style: solid;
+  border-color: purple;
+}
+.Rare{
+  border-style: solid;
+  border-color: blue;
+}
+.cellChampion{
+  display: inline-block;
+}
+
+.name{
+  font-weight: bold;
+  padding:2px 5px;
+}
+.Force{
+  background: red;
+}
+.Spirit{
+  background: green;
+}
+.Void{
+  background: purple;
+}
+.Magic{
+  background: blue;
+}

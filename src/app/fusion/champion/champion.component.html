@@ -1,0 +1,36 @@
+<div class="cellChampion">
+	<div>
+		<img src="{{champion.imageUrl}}" width="70px" height="91px" [class]="rarity"/>
+    </div>
+		<div [class]="affinity" class="name">
+			{{champion.name}}
+		</div>
+		<div *ngIf="champion.obtain">
+			{{champion.obtain.event}}<br>
+			{{champion.obtain.date}}
+		</div>
+		<div *ngIf="champion.ascensionRequired" class="ascension">
+		</div>
+		<div class="ascension">
+			<div id="ascension1" *ngIf="champion.ascensionRequired>0">
+				<div *ngIf="champion.ascension<1" (click)="setascension(1)" class="rankUncompleted">★</div>
+				<div *ngIf="champion.ascension>0" (click)="setascension(1)" class="rankCompleted">★</div>
+			</div>
+			<div id="ascension2" *ngIf="champion.ascensionRequired>1">
+				<div *ngIf="champion.ascension<2" (click)="setascension(2)" class="rankUncompleted">★</div>
+				<div *ngIf="champion.ascension>1" (click)="setascension(2)" class="rankCompleted">★</div>
+			</div>
+			<div id="ascension3" *ngIf="champion.ascensionRequired>2">
+				<div *ngIf="champion.ascension<3" (click)="setascension(3)" class="rankUncompleted">★</div>
+				<div *ngIf="champion.ascension>2" (click)="setascension(3)" class="rankCompleted">★</div>
+			</div>
+			<div id="ascension4" *ngIf="champion.ascensionRequired>3">
+				<div *ngIf="champion.ascension<4" (click)="setascension(4)" class="rankUncompleted">★</div>
+				<div *ngIf="champion.ascension>3" (click)="setascension(4)" class="rankCompleted">★</div>
+			</div>
+			<div id="ascension5" *ngIf="champion.ascensionRequired>4">
+				<div *ngIf="champion.ascension<5" (click)="setascension(5)" class="rankUncompleted">★</div>
+				<div *ngIf="champion.ascension>4" (click)="setascension(5)" class="rankCompleted">★</div>
+			</div>
+		</div>
+	</div>

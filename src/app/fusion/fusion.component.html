@@ -1,0 +1,144 @@
+<table style="width:100%;">
+	<tr>
+		<td colspan=8 class="centered">
+			<champion [champion]=champion></champion>
+		</td>
+	<tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan=2 class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[0]></champion>
+		</td>
+		<td colspan=2 class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[1]></champion>
+		</td>
+		<td colspan=2 class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[2]></champion>
+		</td>
+		<td colspan=2 class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[3]></champion>
+		</td>
+	</tr>
+	<tr>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[0].champions[0]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[0].champions[1]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[1].champions[0]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[1].champions[1]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[2].champions[0]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[2].champions[1]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[3].champions[0]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[3].champions[1]></champion>
+		</td>
+	</tr>
+	<tr>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[0].champions[2]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[0].champions[3]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[1].champions[2]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[1].champions[3]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[2].champions[2]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[2].champions[3]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[3].champions[2]></champion>
+		</td>
+		<td class="centered">
+			<champion (calculateCost)="calculateCost()" [champion]=champion.champions[3].champions[3]></champion>
+		</td>
+	</tr>
+</table>
+<br/>
+<div style="width:100%;display:flex; justify-content: center;">
+	<table>
+		<thead>
+			<tr>
+				<td>
+				</td>
+				<td>Lesser
+				</td>
+				<td>Greater
+				</td>
+				<td>Superior
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="Void">Void
+				</td>
+				<td class="centered Void">{{totalCost.void.lesser}}
+				</td>
+				<td class="centered Void">{{totalCost.void.greater}}
+				</td>
+				<td class="centered Void">{{totalCost.void.superior}}
+				</td>
+			</tr>
+			<tr>
+				<td class="Force">Force
+				</td>
+				<td class="centered Force">{{totalCost.force.lesser}}
+				</td>
+				<td class="centered Force">{{totalCost.force.greater}}
+				</td>
+				<td class="centered Force">{{totalCost.force.superior}}
+				</td>
+			</tr>
+			<tr>
+				<td class="Magic">Magic
+				</td>
+				<td class="centered Magic">{{totalCost.magic.lesser}}
+				</td>
+				<td class="centered Magic">{{totalCost.magic.greater}}
+				</td>
+				<td class="centered Magic">{{totalCost.magic.superior}}
+				</td>
+			</tr>
+			<tr>
+				<td class="Spirit">Spirit
+				</td>
+				<td class="centered Spirit">{{totalCost.spirit.lesser}}
+				</td>
+				<td class="centered Spirit">{{totalCost.spirit.greater}}
+				</td>
+				<td class="centered Spirit">{{totalCost.spirit.superior}}
+				</td>
+			</tr>
+			<tr>
+				<td>Arcane
+				</td>
+				<td class="centered">{{totalCost.arcane.lesser}}
+				</td>
+				<td class="centered">{{totalCost.arcane.greater}}
+				</td>
+				<td class="centered">{{totalCost.arcane.superior}}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
